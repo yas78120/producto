@@ -1,0 +1,22 @@
+{
+  "name": "productos",
+  "version": "1.0.0",
+  "description": "sistemas de gestion de productos",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yas78120/producto.git"
+  },
+  "author": "oliver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yas78120/producto/issues"
+  },
+  "homepage": "https://github.com/yas78120/producto#readme",
+  "dependencies": {
+    "mustache": "^4.0.1"
+  }
+}
