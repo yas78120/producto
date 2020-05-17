@@ -1,5 +1,5 @@
-class  products{
-    contructor(name, description, quantity){
+class Products{
+    constructor(name, description, quantity){
         this.name = name;
         this.description = description;
         this.quantity = quantity;
@@ -7,26 +7,30 @@ class  products{
 }
 class ProductsManagement {
     constructor(){
-        this.listproducts =[]
+        this.listProducts = []
     }
-    addProducts(products){
-        this.listproducts.push{products};
+    addProducts(product){
+        this.listProducts.push(product);
     }
-    removeProducts(products){
-        for(var i=0; i this.listproducts.length; i++){
-            if(this.listproducts[i] == products)
-            this.listproducts.splice(i, 1)
-            return;
+    removeProducts(product){
+        for(var i=0; i < this.listProducts.length; i++){
+            if(this.listProducts[i] == product){
+                this.listProducts.splice(i, 1);
+                return;
+            }
         }
         return;
     }
-    updateProducts(products, newproduct){
-        for(var i=0; i this.listproducts.length; i++){
-            if (this.listproducts[i] == products)
-                this.listproducts[i] == newproduct;
+    updateProducts(product, newProduct){
+        for(var i=0; i < this.listProducts.length; i++){
+            if (this.listProducts[i] == product){
+                this.listProducts[i] = newProduct;
                 return;
+            }
         }
     }
-    
-
+    showProducts(){
+        return this.listProducts;
+    }
 }
+export {Products, ProductsManagement}
